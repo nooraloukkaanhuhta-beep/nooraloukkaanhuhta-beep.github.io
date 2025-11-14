@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laurea University - Job Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        header,
+        footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin-top: 20px;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        .form-section {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Laurea University of Applied Sciences</h1>
+        <nav>
+            <a href="#application">Application Form</a>
+            <a href="#quote">Quote</a>
+            <a href="#media">Laurea Media</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="application" class="form-section">
+            <article>
+                <h2>IT Support Student Assistant Job Application</h2>
+
+                <!--Job Application form starts-->
+                <form action="/submit" method="POST" autocomplete="on">
+
+                    <label>Full Name:
+                        <input type="text" name="fullname" placeholder="Jane Student" required minilenght="3"
+                            maxlength="50">
+                    </label><br><br>
+
+                    <label>Email Address:
+                        <input type="text" name="email" placeholder="you@student.laurea.fi" required
+                            pattern="[^@/\s]+@[^@/\s]+\.[^@/\s]+">
+                    </label><br><br>
+
+                    <label>Password:
+                        <input type="password" name="password" required>
+                    </label><br><br>
+
+                    <label>Years of Experience:
+                        <input type="number" name="experience" min="0" max="10">
+                    </label><br><br>
+
+                    <label>Expected Salary:
+                        <input type="range" name="salary" min="800" max="3000" step="100">
+                    </label><br><br>
+
+                    <label>Job Preferences:</label><br>
+                    <input type="checkbox" name="preference" value="remote"> Remote work<br>
+                    <input type="checkbox" name="preference" value="Oncampus"> Oncampus<br>
+                    <input type="checkbox" name="preference" value="Part-Time"> Part-Time<br>
+                    <input type="checkbox" name="preference" value="Hybrid"> Hybrid<br><br>
+
+                    <label>Job Type: </label><br>
+                    <input type="radio" name="jobtype" value="studentassistant"> Student Assistant <br>
+                    <input type="radio" name="jobtype" value="intern"> Internship <br>
+
+                    <label>Department:
+                        <select name="department">
+                            <option value="it">Information Technology</option>
+                            <option value="business"></option>Library and Learning Services</option>
+                            <option value="student services">Student Services</option>
+                            <option value="Communicaations & marketing">Communications & Marketing</option>
+                        </select>
+                    </label><br><br>
+
+                    <label>Campus Preference:
+                        <input list="campuses" name="campus">
+                        <datalist id="campuses">
+                            <option value="Leppavaara">
+                            <option value="Tikkurila">
+                            <option value="Hyvinkää">
+                            <option value="Lohja">
+                        </datalist>
+                    </label><br><br>
+
+                    <label>Motivation Letter:<br>
+                        <textarea name="coverletter" rows="5" cols="40" placeholder="Why would you like to work with us"
+                            required></textarea>
+                    </label><br><br>
+
+                    <label>Referral Code (disabled):
+                        <input type="text" value="LAAUREAREF123" disabled>
+                    </label><br><br>
+
+                    <label>Application ID (readonly):
+                        <input type="text" value="APP2024IT001" readonly>
+                    </label><br><br>
+
+                    <input type="submit" value="Send" aria-label="Submit Job Application">
+                </form>
+                <!--Job Application form ends here-->
+            </article>
+        </section>
+
+        <aside>
+            <blockquote id="quote">
+                "Education is the most powerful weapon which you can use to change the world." - Nelson Mandela
+            </blockquote>
+        </aside>
+
+        <section id="media">
+            <article>
+                <h2>Laurea Media</h2>
+
+                <!--Image and Caption-->
+                <figure>
+                    <img src="https://www.laurea.fi/globalassets/logot/laurea/laurea-vaakalogo_rgb.png"
+                        alt="Laurea Logo" width="500">
+                    <figcaption>Official Laurea Logo</figcaption>
+                </figure><br>
+
+                <!--Embedded External Media-->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1981.4653035354934!2d24.80203047705162!3d60.22267777505926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df67d9b306011%3A0x3d5f1903758ff53d!2sLaurea-ammattikorkeakoulu%20-%20Lepp%C3%A4vaara!5e0!3m2!1sfi!2sau!4v1763159589435!5m2!1sfi!2sau"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&Copy; 2025 Laurea University of Applied Sciences. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
