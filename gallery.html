@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art Gallery - Gallery</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">"
+</head>
+<body>
+
+    <header>
+        <h1 id="main-title" class="title">Art Gallery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Landscapes of the World</h2>
+        
+        <div class="category-strip">
+            <a href="#mountain" class="category-link">Mountains</a>
+            <a href="#beache" class="category-link">Beaches</a>
+            <a href="#forest" class="category-link">Forests</a>
+            <a href="#desert" class="category-link">Deserts</a>
+            <a href="#lake" class="category-link">Lakes</a>
+        </div>
+
+
+            <!-- Absolute positioning -->
+            <figure class="artwork absolute" id="mountain">
+                <img src="mountains&highlands.jpg" alt="mountains" class="art-img">
+                <figcaption>Mountains and Highlands</figcaption>
+            </figure>
+
+            <!-- Relative positioning -->
+            <figure class="artwork relative" id="beach">
+                <img src="beaches&oceans.jpg" alt="beach" class="art-img">
+                <figcaption>Beaches and Oceans</figcaption>
+            </figure>
+            <br>
+            <br>
+            <br>
+
+
+            <!-- Static positioning -->
+            <figure class="artwork static1" id="forest">
+                <img src="forest&wilderness.jpg" alt="forest" class="art-img">
+                <figcaption>Forests and Wilderness</figcaption>
+            </figure>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!-- Static positioning -->
+            <figure class="artwork static" id="desert">
+                <img src="desert.jpg" alt="desert" class="art-img">
+                <figcaption>Deserts</figcaption>
+            </figure>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!-- Static positioning -->
+            <figure class="artwork static2" id="lake">
+                <img src="lakes&reflection.jpg" alt="lake" class="art-img">
+                <figcaption>Lakes and Reflections</figcaption>  
+            </figure>
+        
+        </div>
+
+        <!-- z-index stack inline-block -->
+        <div class="z-stack-inline">
+            <figure class="z-box z-n1">
+                <img src="mountain2.jpg" alt="mountain2" class="art-img">
+                <figcaption>Mountain View 2</figcaption>
+            </figure>
+            <figure class="z-box z-0">
+                <img src="beach2.jpg" alt="beach2" class="art-img">
+                <figcaption>Beach View 2</figcaption>
+            </figure>
+            <figure class="z-box z-1">
+                <img src="forest2.jpg" alt="forest2" class="art-img">
+                <figcaption>Forest View 2</figcaption>
+            </figure>
+            <figure class="z-box z-2">
+                <img src="desert2.jpg" alt="desert2" class="art-img">
+                <figcaption>Desert View 2</figcaption>
+            </figure>
+            <figure class="z-box z-3">
+                <img src="lakes2.jpg" alt="lake2" class="art-img">
+                <figcaption>Lake View 2</figcaption>
+            </figure>
+        </div>
+
+    <!-- Hidden landscape-->
+     <figure class="landscape hidden">
+        <img src="hidden.jpg" alt="landscape" class="art-img">
+        <figcaption>Landscape</figcaption>
+     </figure>
+
+    <!-- Floating box -->
+    <div class="floating box">
+        <p>Which landscape was your favourite?<br>
+        They all show a different side of nature. </p>
+    </div>
+    <div class="clear box">
+           <p>Emerging favourites: Quiet lakes, Majestic mountains and Serene beaches.</p> 
+     </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Art Gallery. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
