@@ -1,0 +1,125 @@
+/* -----General body font and background----- */
+body {
+    background-color: rgb(249, 252, 254);
+    color: rgba(1, 62, 146, 0.85);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+/* -----Navbar----- */
+.navbar {
+  background-color: #e0ecf8 !important; /* navbar background */
+}
+
+.navbar-brand,
+.nav-link {
+  color: rgba(1, 62, 146, 0.85) !important;            /* heading/text color */
+}
+
+.nav-link:hover {
+  color: #0784f1 !important;            /* accent hover */
+}
+
+/* -----Buttons----- */
+.btn-primary {
+    background-color: #e0ecf8;
+    border: none;
+    color: rgba(1, 62, 146, 0.85);
+    transition: background 0.5s ease;
+}
+
+.btn-outline-primary {
+    color: rgba(1, 62, 146, 0.85)
+}
+
+.btn-primary:hover {
+    background-color: #0784f1;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0784f1;
+}
+
+/* -----Gallery----*/
+.gallery {
+    padding: 2rem 0;
+}
+
+.card-img-top {
+    width: 100%;          
+    height: 450px;        
+    object-fit: cover;    
+}
+
+/* Tablets (medium screens) */
+@media (max-width: 992px) {
+    .card-img-top {
+        height: 350px;
+    }
+}
+
+/* Mobile phones (small screens) */
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 200px;
+    }
+}
+
+/* -----Cards-----*/
+.card {
+    background-color: #e0ecf8;
+    color: rgba(1, 62, 146, 0.85);
+    border: none;
+    border-radius: 5px;
+    padding: 10px; 
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: rgba(1, 62, 146, 0.85);
+}
+
+.contact-social:hover {
+    color: #0784f1;
+}
+
+/* -----Footer-----*/
+footer {
+    background-color:#e0ecf8 !important;
+    text-align: center;
+    color: rgba(1, 62, 146, 0.85) !important; 
+}
+
+footer p {
+    margin: .02rem 0;
+}
+
+footer a {
+  color: #4a90e2 !important;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* -----Socials-----*/
+.contact-social {
+    color: rgba(1, 62, 146, 0.85);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: color 0.3s ease;
+}
+
+/* Gallery card hover effect */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(1, 62, 146, 0.2);
+}
